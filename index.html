@@ -12,7 +12,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Nucleo Iconos -->
   <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS -->
@@ -37,6 +38,7 @@
   video{
   width:100%;
   }
+  
   </style>
   
 </head>
@@ -46,7 +48,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://paypal.me/anigo19" rel="tooltip" title="Diseñado y creado por Elizabeth V" data-placement="bottom" target="_blank">
+        <a class="navbar-brand" href="https://paypal.me/anigo19" rel="tooltip" title="Creado y elaborado por Elizabeth V" data-placement="bottom" target="_blank">
           <span>CR</span> Elizabeth V.
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,8 +135,17 @@
             <span data-notify="icon" class="tim-icons icon-bell-55"></span>
             <span>
               <b> ¡INFORMACIÓN! - </b> Elizabeth Player v2 funcionando correctamente <a href="https://discord.gg/S96aG7YVbS" target="_blank" class="alert-link">¿Necesitas ayuda?</a></span>
-          </div>
-		  
+            </div>
+			<!--
+			<div class="alert alert-danger alert-with-icon">
+            <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+              <i class="tim-icons icon-simple-remove"></i>
+            </button>
+            <span data-notify="icon" class="tim-icons icon-bulb-63"></span>
+            <span>
+              <b> ¡INFORMACIÓN! - </b> Elizabeth Player v2 en mantenimiento <a href="https://discord.gg/S96aG7YVbS" target="_blank" class="alert-link">¿Necesitas ayuda?</a></span>
+            </div>
+		    -->
 		  <h1 class="title">CrunchyRoll Premium V2</h1><br>
 		  <h3><i class="fa fa-bullhorn" style="font-size:25px;color:white"></i> Sigue todos los pasos correctamente para no tener problemas al momento de ver animes.</h3>
 		  
@@ -164,20 +175,23 @@
 		});
 		</script>
   
-		<video poster="./assets/img/video.jpg" class="js-player"><source src="https://files.catbox.moe/39ny9d.mp4"/></video>
+		<video poster="./assets/img/video.jpg" class="js-player w3-hide-small"><source src="https://files.catbox.moe/39ny9d.mp4"/></video>
+		<video poster="./assets/img/video.jpg" class="js-player w3-hide-large w3-hide-medium"><source src="https://files.catbox.moe/vomrku.mp4"/></video>
 		  
 		  <br>
-		  <div class="squares square-1"></div>
-          <div class="squares square-2"></div>
-          <div class="squares square-3"></div>
-          <div class="squares square-4"></div>
+		  <img src="assets/img/path1.png" class="path">
 		  <h1 class="title">BUGS</h1><br>
 		  <h3 class="text-danger"><b>* Subtitulos no encontrados</b></h3>
 		  <h4>Este bug se presenta cuando se observa algun anime con doblaje y este no cuenta con algun subtitulo integrado en el mismo.</h4><br>
 		  <h3 class="text-danger"><b>* Error al reproducir un video "Video no encontrado"<b></h3>
-		  <h4>Puedes solucionar este bug descargando una VPN y poner su ubicacion en cualquier Pais de LATAM menos Mexico.</h4><br>
+		  <h4>Puedes solucionar este bug descargando una VPN y poner su ubicacion en cualquier Pais de LATAM menos Mexico.</h4>
 		  
-			<center>
+			
+			<center><div class="section section-signup">
+			<div class="squares square-1"></div>
+			<div class="squares square-2"></div>
+			<div class="squares square-3"></div>
+			<div class="squares square-4"></div>
 			<div class="container center section section-download">
 			<div class="card content center" style="width:300px">
 			<img class="card-img-top" src="./assets/img/bg.png" alt="CV" style="width:100%">
@@ -187,14 +201,38 @@
 			<a href="https://discord.gg/S96aG7YVbS" target="_blank" class="btn btn-success stretched-link"><i class="fab fa-discord"></i> Discord</a>
 	        </div>
 			</div>
-		    </div>
 			</center>
 	
 		  <center>
-		  <a href="https://ouo.io/UR162" target="_blank"><button class="btn btn-info"><b><i class="tim-icons icon-cloud-download-93"></i> DESCARGAR CR V2</b></button></a>
+		  <button class="btn btn-info" data-toggle="modal" data-target="#myModal"><b><i class="tim-icons icon-cloud-download-93"></i> DESCARGAR CR V2</b></button>
 		  <a href="https://paypal.me/anigo19" target="_blank"><button class="btn btn-primary"><b><i class="tim-icons icon-heart-2"></i> APOYAR EL PROYECTO</b></button></a>
 		  <a href="https://mega.nz/aff=BtrMSx0GUTk" target="_blank"><button class="btn btn-danger"><b><i class="fa fa-cloud"></i> CREAR CUENTA MEGA</b></button></a>
 		  </center>
+		  </div>
+		  </div>
+		  
+		  <!-- DS INICIO -->
+		  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header justify-content-center">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<i class="tim-icons icon-simple-remove"></i>
+				  </button>
+				  <h4 class="title title-up">INFORMACIÓN</h4>
+				</div>
+				<div class="modal-body">
+				  <h4 style="color:black">El archivo a descargar debe tener el nombre de <b>play-main.zip</b> caso contrario si se descarga otro archivo que no contenga ese nombre <b>ELIMINAR.</b></h4>
+				</div>
+				<div class="modal-footer">
+				  <a href="https://ouo.io/UR162" target="_blank"><button type="button" class="btn btn-default">DESCARGAR</button></a>
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">CERRAR</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--  DS FINAL -->
+		  
 		  
 		  <br>
 		  <div class="container center card-body">
