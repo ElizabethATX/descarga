@@ -14,12 +14,7 @@ require_once( __DIR__ . '/2video.php' );
 	<meta name="viewport" content="width=device-width, initial-scale=1">
    
 
-<script>
-  $(document).ready(function(){
-  $("a[title|='Hosted on free web hosting 000webhost.com. Host your own website for       FREE.']").css("display", "none");
-  $("img[alt|='www.000webhost.com']").css("display", "none");
-  });
-</script>
+
 
 <style type="text/css">
 	/*!
@@ -132,7 +127,6 @@ max-height: 100% !important
           
           const controls = [
               'play-large', // The large play button in the center
-              'restart', // Restart playback
               'rewind', // Rewind by the seek time (default 10 seconds)
               'play', // Play/pause playback
               'fast-forward', // Fast forward by the seek time (default 10 seconds)
@@ -144,8 +138,7 @@ max-height: 100% !important
               'captions', // Toggle captions
               'settings', // Settings menu
               'pip', // Picture-in-picture (currently Safari only)
-              'airplay', // Airplay (currently Safari only)
-              'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
+              'airplay', // Airplay (currently Safari only
               'fullscreen' // Toggle fullscreen
           ];
           
@@ -153,14 +146,13 @@ max-height: 100% !important
       });
   </script>
   
-  <video poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="js-player"><source src="<?php echo $source; ?>"/></video>
+  <video poster="./assets/img/video.jpg" class="js-player"><source src="<?php echo $source; ?>"/></video>
 
 	
 	 <div id="WgD">
   <div class='WgD-position'>
     <div class='WgD-container'>
       <h3 class='WgD-title'>Adblock Detectado</h3>
-	  <img src="foto.png"/>
       <p class='WgD-text'><b>ANILIVE</b> se mantiene gracias a la <b>publicidad</b>, por favor Desactiva Adblock para seguir viendo anime</p>
       <a class='WgD-reload' onclick="adBlockReload()" href="#">Recargar página</a>
     </div>
